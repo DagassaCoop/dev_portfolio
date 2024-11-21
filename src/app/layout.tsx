@@ -18,6 +18,9 @@ export const metadata: Metadata = {
   description: "Professional Web Developer Portfolio",
 };
 
+// Providers
+import ThemeProvider from "@/components/providers/ThemeProvider";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -25,11 +28,18 @@ export default function RootLayout({
   hero: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" suppressHydrationWarning>
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        {children}
+        <ThemeProvider
+          attribute="class"
+          defaultTheme="dark"
+          enableSystem
+          disableTransitionOnChange
+        >
+          {children}
+        </ThemeProvider>
       </body>
     </html>
   );
