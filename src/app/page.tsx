@@ -1,5 +1,8 @@
 // Sections
 import Hero from "@/components/Hero";
+import Grid from "@/components/Grid";
+
+// Components
 import { FloatingNav } from "@/components/ui/FloatingNav";
 
 // Mock
@@ -11,6 +14,7 @@ export default function Home() {
       <div className="max-w-7xl w-full">
         <FloatingNav navItems={navItems} />
         <Hero />
+        <Grid />
       </div>
     </main>
   );

@@ -7,9 +7,9 @@ export interface IGridItem {
   id: number;
   title: string;
   description: string;
-  className: string;
-  imgClassName: string;
-  titleClassName: string;
+  className?: string;
+  imgClassName?: string;
+  titleClassName?: string;
   img: string;
   spareImg: string;
 }
