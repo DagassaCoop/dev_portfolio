@@ -4,7 +4,7 @@ export interface INavLink {
 }
 
 export interface IGridItem {
-  id: number;
+  id: string;
   title: string;
   description: string;
   className: string;
@@ -15,10 +15,24 @@ export interface IGridItem {
 }
 
 export interface IProject {
-  id: number;
+  id: string;
   title: string;
   des: string;
   img: string;
   iconLists: string[];
+  link: string;
+}
+
+export interface IWorkExperience {
+  id: string;
+  title: string;
+  desc: string;
+  className: string;
+  thumbnail: string;
+}
+
+export interface ISocialMedia {
+  id: string;
+  img: string;
   link: string;
 }

@@ -20,7 +20,6 @@ export default function Home() {
         <Grid />
         <RecentProjects />
         <Experience />
-
         <Footer />
       </div>
     </main>
