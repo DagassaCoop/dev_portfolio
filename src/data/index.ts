@@ -23,7 +23,7 @@ export const gridItems: IGridItem[] = [
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
     titleClassName: "justify-end",
-    img: "/b1.svg",
+    img: "/b1.webp",
     spareImg: "",
   },
   {
@@ -79,86 +79,68 @@ export const gridItems: IGridItem[] = [
   },
 ];
 
+// TODO: Add links
 export const projects: IProject[] = [
   {
     id: "ebf24886-c66d-4be8-8043-612550f060ed",
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "Brainwave",
+    des: "Where cutting-edge design meets AI excellence",
+    img: "/brainwavePreview.webp",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg"],
+    link: "https://project1",
   },
   {
     id: "16326960-690e-448d-943a-0bbf49685d3e",
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Electronica",
+    des: "Creative Videographer Portfolio with GSAP animation",
+    img: "/electronicaPreview.jpg",
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg"],
+    link: "http://sashaproduction.ca",
   },
   {
-    id: "5e4a8da9-22a3-482e-ba37-0ea0b10a272f",
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
-  },
-  {
-    id: "e0f39ac3-e162-465e-beed-8fa36e1e220f",
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    id: "adeedc9a-6d6e-4f47-8792-05128e9c92c8",
+    title: "Custom Auth",
+    des: "Fullstack application with custom JWT authentication.",
+    img: "/customAuthPreview.png",
+    iconLists: [
+      "/re.svg",
+      "/ts.svg",
+      "/mongodb.svg",
+      "/express.svg",
+      "/graphql.svg",
+    ],
+    link: "https://project1",
   },
 ];
+
+export const recentProjects = [...projects.slice(0, 2)];
 
 export const workExperience: IWorkExperience[] = [
   {
     id: "824678ca-30c8-4cc2-930a-91c4eaff9985",
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Frontend Developer",
+    desc: "Created responsive user-friendly UI UX for design studio clients.",
     className: "md:col-span-2",
     thumbnail: "/exp1.svg",
   },
   {
     id: "9a1675ce-074b-4a72-bf24-b9f96d9ffab6",
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Fullstack Developer",
+    desc: "Designed and developed large analytics dashboard",
     className: "md:col-span-2",
-    thumbnail: "/exp2.svg",
+    thumbnail: "/exp4.svg",
   },
-  {
-    id: "31a638bb-cf66-40a1-83b5-c1f94230f059",
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2",
-    thumbnail: "/exp3.svg",
-  },
-  // {
-  //   id: "02588600-7a24-496f-9566-f7f1994adfd3",
-  //   title: "Lead Frontend Developer",
-  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
-  //   className: "md:col-span-2",
-  //   thumbnail: "/exp4.svg",
-  // },
 ];
 
 export const socialMedia: ISocialMedia[] = [
   {
     id: "ba7cad7b-f927-4a0d-a542-37dd30585b99",
     img: "/git.svg",
-    link: "",
-  },
-  {
-    id: "b4f7f5ff-a76a-4cf5-a2f4-0f77c0d2cf61",
-    img: "/twit.svg",
-    link: "",
+    link: "https://github.com/DagassaCoop",
   },
   {
     id: "641a7d88-07b6-4124-b4b1-4f2c3bba716f",
     img: "/link.svg",
-    link: "",
+    link: "https://www.linkedin.com/in/dmytro-bondar/",
   },
 ];

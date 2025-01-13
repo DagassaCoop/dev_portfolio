@@ -1,8 +1,15 @@
+// Core
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
+// Assets
 import "./globals.css";
+// Providers
 import { BaseProvider } from "@/providers";
+// Components
+import { FloatingNav } from "@/components/ui/FloatingNavbar";
+// Mock
+import { navItems } from "@/data";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -22,7 +29,10 @@ export default function RootLayout({
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
       <body className={inter.className}>
-        <BaseProvider>{children}</BaseProvider>
+        <BaseProvider>
+          <FloatingNav navItems={navItems} />
+          {children}
+        </BaseProvider>
       </body>
     </html>
   );
