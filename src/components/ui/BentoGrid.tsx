@@ -160,13 +160,14 @@ export const BentoGridItem = ({
           )}
           {index === 6 && (
             <div className="mt-5 relative">
-              {/* <div
+              <div
                 className={`absolute -bottom-5 right-0 ${
                   copied ? "block" : "block"
                 }`}
               >
-                <Lottie options={defaultOptions} height={200} width={400} />
-              </div> */}
+                <img src="/confetti.gif" alt="confetti" />
+                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
+              </div>
 
               <MagicButton
                 title={copied ? "Email is Copied!" : "Copy my email address"}
