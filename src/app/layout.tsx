@@ -29,10 +29,12 @@ export default function RootLayout({
         <link rel="icon" href="/jsm-logo.png" sizes="any" />
       </head>
       <body className={inter.className}>
-        <BaseProvider>
+        {/* <BaseProvider>
           <FloatingNav navItems={navItems} />
           {children}
-        </BaseProvider>
+        </BaseProvider> */}
+        <FloatingNav navItems={navItems} />
+        {children}
       </body>
     </html>
   );
