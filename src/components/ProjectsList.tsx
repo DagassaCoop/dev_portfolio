@@ -20,7 +20,11 @@ const ProjectsList: FC<IProjectsListProps> = ({ projects }) => {
           key={item.id}
         >
           <PinContainer title={"/" + item.link.split("//")[1]} href={item.link}>
-            <div className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[30vh] mb-10">
+            <a
+              className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[30vh] mb-10"
+              href={item.link}
+              target="_blank"
+            >
               <div
                 className="relative w-full h-full overflow-hidden lg:rounded-3xl"
                 style={{ backgroundColor: "#13162D" }}
@@ -34,7 +38,7 @@ const ProjectsList: FC<IProjectsListProps> = ({ projects }) => {
                   className="z-10 absolute bottom-0"
                 />
               )}
-            </div>
+            </a>
 
             <h1 className="font-bold lg:text-2xl md:text-xl text-base line-clamp-1">
               {item.title}

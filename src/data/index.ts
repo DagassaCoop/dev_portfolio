@@ -87,7 +87,7 @@ export const projects: IProject[] = [
     des: "Where cutting-edge design meets AI excellence",
     img: "/brainwavePreview.webp",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg"],
-    link: "brainwave-ecru-delta.vercel.app",
+    link: "https://brainwave-ecru-delta.vercel.app/",
   },
   {
     id: "16326960-690e-448d-943a-0bbf49685d3e",
