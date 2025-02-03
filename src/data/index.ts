@@ -98,18 +98,12 @@ export const projects: IProject[] = [
     link: "http://sashaproduction.ca",
   },
   {
-    id: "adeedc9a-6d6e-4f47-8792-05128e9c92c8",
-    title: "Custom Auth",
-    des: "Fullstack application with custom JWT authentication.",
-    img: "/customAuthPreview.png",
-    iconLists: [
-      "/re.svg",
-      "/ts.svg",
-      "/mongodb.svg",
-      "/express.svg",
-      "/graphql.svg",
-    ],
-    link: "https://project1",
+    id: "b16ae796-f266-42d6-9f9b-6c49277f4aff",
+    title: "Hallo Lab",
+    des: "Colorful SPA with advanced object positioning",
+    img: "/haloLabPreview.png",
+    iconLists: ["/re.svg", "/ts.svg", "/sass.svg"],
+    link: "https://halo-lab-eta.vercel.app/",
   },
 ];
 
