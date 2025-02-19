@@ -94,7 +94,7 @@ export const projects: IProject[] = [
     title: "Electronica",
     des: "Creative Videographer Portfolio with GSAP animation",
     img: "/electronicaPreview.jpg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg"],
+    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg", "/aws.svg"],
     link: "http://sashaproduction.ca",
   },
   {
