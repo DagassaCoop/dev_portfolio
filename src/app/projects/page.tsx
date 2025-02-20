@@ -3,6 +3,7 @@ import { projects } from "@/data";
 
 // Components
 import ProjectsList from "@/components/ProjectsList";
+import Footer from "@/components/Footer";
 
 export default function Projects() {
   return (
@@ -12,6 +13,7 @@ export default function Projects() {
           All <span className="text-purple">Projects</span>
         </h1>
         <ProjectsList projects={projects} />
+        <Footer />
       </div>
     </main>
   );

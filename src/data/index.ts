@@ -87,7 +87,7 @@ export const projects: IProject[] = [
     des: "Where cutting-edge design meets AI excellence",
     img: "/brainwavePreview.webp",
     iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/gsap.svg"],
-    link: "https://brainwave-ecru-delta.vercel.app/",
+    link: "https://brainwave-ecru-delta.vercel.app",
   },
   {
     id: "16326960-690e-448d-943a-0bbf49685d3e",
@@ -99,15 +99,23 @@ export const projects: IProject[] = [
   },
   {
     id: "b16ae796-f266-42d6-9f9b-6c49277f4aff",
+    title: "Cursus",
+    des: "A modern learning platform built with Next 15, TypeScript, and GraphQL",
+    img: "/cursusPreview.png",
+    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/graphql.svg"],
+    link: "https://next-15-teaching-platform.vercel.app",
+  },
+  {
+    id: "b16ae796-f266-42d6-9f9b-6c49277f4aff",
     title: "Hallo Lab",
     des: "Colorful SPA with advanced object positioning",
     img: "/haloLabPreview.png",
     iconLists: ["/re.svg", "/ts.svg", "/sass.svg"],
-    link: "https://halo-lab-eta.vercel.app/",
+    link: "https://halo-lab-eta.vercel.app",
   },
 ];
 
-export const recentProjects = [...projects.slice(0, 2)];
+export const recentProjects = [...projects.slice(0, 3)];
 
 export const workExperience: IWorkExperience[] = [
   {

@@ -1,6 +1,9 @@
 // Core
 import { FC } from "react";
 
+// Components
+import Footer from "@/components/Footer";
+
 const FRONTEND = [
   "Next.js",
   "React",
@@ -14,7 +17,7 @@ const FRONTEND = [
 ];
 const BACKEND = ["Node.js", "Express.js", "Docker", "GraphQL"];
 const DATABASES = ["MongoDB", "AWS", "MySQL", "Firebase", "Supabase"];
-const DEV_TOOLS = ["Git", "Storybook"];
+const DEV_TOOLS = ["Git", "Storybook", "ESLint"];
 
 const SkillList: FC<{ list: string[] }> = ({ list }) => {
   return (
@@ -52,17 +55,17 @@ export default function About() {
               <span className="font-bold text-purple">Dmytro Bondar</span>!
             </h2>
             <p className="text-lg mb-3 lg:text-xl lg:mb-6">
-              Skilled <span className="font-bold text-purple">FullStack</span>{" "}
-              developer based in{" "}
+              Skilled <span className="font-bold text-purple">Frontend</span>{" "}
+              Developer based in{" "}
               <span className="font-bold text-purple">Toronto</span> with focus
               on <span className="font-bold text-purple">React</span> and{" "}
               <span className="font-bold text-purple">TypeScript</span>, I
-              specialize in creating scalable user interfaces. My experience
+              specialize in creating scalable user interfaces and API integrations. My experience
               includes working on cross-technology projects and quickly adapting
               to new tools and frameworks.
             </p>
             <p className="text-lg mb-3 lg:text-xl lg:mb-6">
-              With over <span className="font-bold text-purple">four</span>{" "}
+              With over <span className="font-bold text-purple">4</span>{" "}
               years of experience, I&apos;ve worked on a wide range of projects,
               from small SPA to large Saas products, ensuring each one is
               tailored to its unique goals and audience.
@@ -97,6 +100,7 @@ export default function About() {
           </div>
         </div>
       </div>
+      <Footer />
     </main>
   );
 }
