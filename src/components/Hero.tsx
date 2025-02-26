@@ -56,9 +56,9 @@ const Hero = () => {
             Hi! I&apos;m Dmytro, a Frontend Developer based in Canada.
           </p>
 
-          <a href="#projects">
+          <a href="/about">
             <MagicButton
-              title="Show my work"
+              title="Learn more about me"
               icon={<FaLocationArrow />}
               position="right"
             />
