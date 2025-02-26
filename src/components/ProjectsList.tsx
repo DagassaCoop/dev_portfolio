@@ -19,7 +19,7 @@ const ProjectsList: FC<IProjectsListProps> = ({ projects }) => {
           className="lg:min-h-[32.5rem] h-[25rem] flex items-center justify-center sm:w-96 w-[80vw]"
           key={item.id}
         >
-          <PinContainer title={"/" + item.link.split("//")[1]} href={item.link}>
+          <PinContainer title={item.link.split("//")[1]} href={item.link}>
             <a
               className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[30vh] mb-10"
               href={item.link}
