@@ -2,6 +2,7 @@
 // Core
 import React from "react";
 import { FaLocationArrow } from "react-icons/fa6";
+import Link from "next/link";
 
 // Components
 import MagicButton from "./MagicButton";
@@ -56,13 +57,13 @@ const Hero = () => {
             Hi! I&apos;m Dmytro, a Frontend Developer based in Canada.
           </p>
 
-          <a href="/about">
+          <Link href="/about">
             <MagicButton
               title="Learn more about me"
               icon={<FaLocationArrow />}
               position="right"
             />
-          </a>
+          </Link>
         </div>
       </div>
     </div>
