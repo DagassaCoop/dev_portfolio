@@ -100,7 +100,7 @@ export const projects: IProject[] = [
   {
     id: "b16ae796-f266-42d6-9f9b-6c49277f4aff",
     title: "Cursus",
-    des: "A modern learning platform built with Next 15, TypeScript, and GraphQL",
+    des: "A playground project for modern usage of Next 15, React and TypeScript",
     img: "/cursusPreview.png",
     iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/graphql.svg"],
     link: "https://next-15-teaching-platform.vercel.app",
