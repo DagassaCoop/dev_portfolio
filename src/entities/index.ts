@@ -37,6 +37,11 @@ export interface ISocialMedia {
   link: string;
 }
 
+export interface ISkillSection {
+  title: string;
+  skills: string[];
+}
+
 export interface ICertificates {
   id: string;
   title: string;

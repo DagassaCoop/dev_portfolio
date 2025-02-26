@@ -3,21 +3,8 @@ import { FC } from "react";
 
 // Components
 import Footer from "@/components/Footer";
-
-const FRONTEND = [
-  "Next.js",
-  "React",
-  "JavaScript (es6+)",
-  "TypeScript",
-  "HTML/CSS",
-  "Tailwind CSS",
-  "Sass",
-  "MUI",
-  "Bootstrap",
-];
-const BACKEND = ["Node.js", "Express.js", "Docker", "GraphQL"];
-const DATABASES = ["MongoDB", "AWS", "MySQL", "Firebase", "Supabase"];
-const DEV_TOOLS = ["Git", "Storybook", "ESLint"];
+// Mock
+import { skillSections } from "@/data";
 
 const SkillList: FC<{ list: string[] }> = ({ list }) => {
   return (
@@ -60,44 +47,30 @@ export default function About() {
               <span className="font-bold text-purple">Toronto</span> with focus
               on <span className="font-bold text-purple">React</span> and{" "}
               <span className="font-bold text-purple">TypeScript</span>, I
-              specialize in creating scalable user interfaces and API integrations. My experience
-              includes working on cross-technology projects and quickly adapting
-              to new tools and frameworks.
+              specialize in creating scalable user interfaces and API
+              integrations. My experience includes working on cross-technology
+              projects and quickly adapting to new tools and frameworks.
             </p>
             <p className="text-lg mb-3 lg:text-xl lg:mb-6">
-              With over <span className="font-bold text-purple">4</span>{" "}
-              years of experience, I&apos;ve worked on a wide range of projects,
-              from small SPA to large Saas products, ensuring each one is
-              tailored to its unique goals and audience.
+              With over <span className="font-bold text-purple">4</span> years
+              of experience, I&apos;ve worked on a wide range of projects, from
+              small SPA to large Saas products, ensuring each one is tailored to
+              its unique goals and audience.
             </p>
           </div>
         </div>
 
-        <div>
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-purple mb-6 lg:text-3xl lg:mb-8">
-              Frontend
-            </h2>
-            <SkillList list={FRONTEND} />
-          </div>
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-purple mb-6 lg:text-3xl lg:mb-8 ">
-              Backend
-            </h2>
-            <SkillList list={BACKEND} />
-          </div>
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-purple mb-6 lg:text-3xl lg:mb-8 ">
-              Databases and DevOps
-            </h2>
-            <SkillList list={DATABASES} />
-          </div>
-          <div className="mb-10">
-            <h2 className="text-2xl font-bold text-purple mb-6 lg:text-3xl lg:mb-8 ">
-              Dev Tools
-            </h2>
-            <SkillList list={DEV_TOOLS} />
-          </div>
+        <div className="mb-20">
+          {skillSections.map((section, index) => {
+            return (
+              <div className="mb-10" key={index}>
+                <h2 className="text-2xl font-bold text-purple mb-6 lg:text-3xl lg:mb-8">
+                  {section.title}
+                </h2>
+                <SkillList list={section.skills} />
+              </div>
+            );
+          })}
         </div>
       </div>
       <Footer />

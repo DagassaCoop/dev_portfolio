@@ -1,4 +1,5 @@
 import About from "../app/about/page";
+import { ISkillSection } from "../entities/index";
 import {
   ICertificates,
   IGridItem,
@@ -146,6 +147,36 @@ export const socialMedia: ISocialMedia[] = [
     id: "641a7d88-07b6-4124-b4b1-4f2c3bba716f",
     img: "/link.svg",
     link: "https://www.linkedin.com/in/dmytro-bondar/",
+  },
+];
+
+export const skillSections: ISkillSection[] = [
+  {
+    title: "Frontend",
+    skills: [
+      "Next.js",
+      "React",
+      "JavaScript (es6+)",
+      "TypeScript",
+      "Vitest",
+      "HTML/CSS",
+      "Tailwind CSS",
+      "Sass",
+      "MUI",
+      "Bootstrap",
+    ],
+  },
+  {
+    title: "Backend",
+    skills: ["Node.js", "Express.js", "Docker", "GraphQL"],
+  },
+  {
+    title: "Databases",
+    skills: ["MongoDB", "AWS", "MySQL", "Firebase", "Supabase"],
+  },
+  {
+    title: "Dev Tools",
+    skills: ["Git", "Storybook", "ESLint"],
   },
 ];
 
