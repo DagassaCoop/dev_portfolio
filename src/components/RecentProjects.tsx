@@ -20,7 +20,7 @@ const RecentProjects = () => {
       <div className="flex justify-center">
         <Link href="/projects">
           <MagicButton
-            title="See more"
+            title="See all works"
             icon={<FaLocationArrow />}
             position="right"
           />
