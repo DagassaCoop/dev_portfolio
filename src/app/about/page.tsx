@@ -29,7 +29,11 @@ const Certificate: FC<{ certificate: ICertificate }> = ({ certificate }) => {
   return (
     <div className="lg:flex mb-10">
       <div className="w-full flex justify-center lg:max-w-[300px] max-lg:mb-16 lg:mr-10">
-        <img src={img} alt={title} className="w-1/2 lg:w-full h-full" />
+        <img
+          src={img}
+          alt={title}
+          className="w-1/2 lg:w-full h-full rounded-lg"
+        />
       </div>
       <div className="flex justify-center lg:flex-row lg:justify-between flex-wrap w-full max-lg:gap-4 max-lg:text-center">
         <p className="text-lg lg:text-2xl font-bold text-purple">{title}</p>
