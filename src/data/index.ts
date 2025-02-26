@@ -1,4 +1,6 @@
+import About from "../app/about/page";
 import {
+  ICertificates,
   IGridItem,
   INavLink,
   IProject,
@@ -144,5 +146,24 @@ export const socialMedia: ISocialMedia[] = [
     id: "641a7d88-07b6-4124-b4b1-4f2c3bba716f",
     img: "/link.svg",
     link: "https://www.linkedin.com/in/dmytro-bondar/",
+  },
+];
+
+export const certificates: ICertificates[] = [
+  {
+    id: "2244d3ff-f323-405e-ab6a-96c4cbc824ed",
+    title: "NEXT.js v15: Development of Advanced SPA and SSR",
+    description:
+      "A comprehensive training program aimed at deep mastering of modern Next.js and its capabilities for building scalable web applications. Includes information about key framework concepts and work with Server-Side Rendering (SSR), Static Site Generation (SSG), GraphQL, Zustand, Redux Toolkit, and other advanced technologies.",
+    date: new Date("30/12/2024"),
+    img: "next.js-8-dmytro-bondar.jpg",
+  },
+  {
+    id: "c6449b28-8ee8-45a5-b0f1-23ef68acd64f",
+    title: "The Nuts and Bolts of OAuth 2.0",
+    description:
+      "A deep dive into modern authentication and API security. Led by security expert Aaron Parecki, it covers OAuth 2.0 grant types, OpenID Connect, API protection, token validation, and the latest OAuth 2.1 updates. Includes best practices for securing web apps, native apps, and SPAs, implementing OAuth clients, and designing secure API access.",
+    date: new Date("4/08/2023"),
+    img: "oauth-course-certificate.jpg",
   },
 ];

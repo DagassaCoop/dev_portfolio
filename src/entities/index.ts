@@ -36,3 +36,11 @@ export interface ISocialMedia {
   img: string;
   link: string;
 }
+
+export interface ICertificates {
+  id: string;
+  title: string;
+  description: string;
+  date: Date;
+  img: string;
+}
