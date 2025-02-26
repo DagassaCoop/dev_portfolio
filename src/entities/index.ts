@@ -42,7 +42,7 @@ export interface ISkillSection {
   skills: string[];
 }
 
-export interface ICertificates {
+export interface ICertificate {
   id: string;
   title: string;
   description: string;

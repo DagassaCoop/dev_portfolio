@@ -5,6 +5,7 @@ import { FC } from "react";
 import Footer from "@/components/Footer";
 // Mock
 import { skillSections, certificates } from "@/data";
+import { ICertificate } from "@/entities";
 
 const SkillList: FC<{ list: string[] }> = ({ list }) => {
   return (
@@ -22,6 +23,30 @@ const SkillList: FC<{ list: string[] }> = ({ list }) => {
   );
 };
 
+const Certificate: FC<{ certificate: ICertificate }> = ({ certificate }) => {
+  const { id, title, description, date, img } = certificate;
+
+  return (
+    <div className="lg:flex mb-10">
+      <div className="w-full flex justify-center lg:max-w-[300px] max-lg:mb-16 lg:mr-10">
+        <img src={img} alt={title} className="w-1/2 lg:w-full h-full" />
+      </div>
+      <div className="flex justify-center lg:flex-row lg:justify-between flex-wrap w-full max-lg:gap-4 max-lg:text-center">
+        <p className="text-lg lg:text-2xl font-bold text-purple">{title}</p>
+        <p className="text-md lg:text-lg">{description}</p>
+        <p className="text-xs lg:text-sm text-gray-400">
+          Achieved:{" "}
+          {date.toLocaleDateString("en-GB", {
+            day: "2-digit",
+            month: "long",
+            year: "numeric",
+          })}
+        </p>
+      </div>
+    </div>
+  );
+};
+
 export default function About() {
   return (
     <main className="relative bg-black-100 flex justify-center items-center flex-col overflow-hidden mx-auto sm:px-10 px-5 pt-36">
@@ -31,7 +56,7 @@ export default function About() {
           <span className="text-purple">Skills</span>
         </h1>
         <div className="flex flex-wrap mt-10 mb-6">
-          <div className="flex flex-col-reverse mb-20 md:flex-row">
+          <div className="flex flex-col-reverse mb-12 lg:mb-20 md:flex-row">
             <div className="flex justify-center w-full md:w-3/5 lg:w-2/5 p-4">
               <div className="w-2/3 md:w-4/5 lg:w-3/5 h-fit overflow-hidden rounded-xl">
                 <img src="./person.jpg" alt="" />
@@ -61,11 +86,14 @@ export default function About() {
             </div>
           </div>
 
-          <div className="mb-20">
+          <div className="mb-12 lg:mb-20">
+            <h2 className="text-3xl text-center font-bold w-full text-purple mb-10">
+              Skills
+            </h2>
             {skillSections.map((section, index) => {
               return (
                 <div className="mb-10" key={index}>
-                  <h2 className="text-2xl font-bold text-purple mb-6 lg:text-3xl lg:mb-8">
+                  <h2 className="text-lg font-bold text-purple mb-6 lg:text-xl lg:mb-8">
                     {section.title}
                   </h2>
                   <SkillList list={section.skills} />
@@ -74,9 +102,14 @@ export default function About() {
             })}
           </div>
 
-          <div>
+          <div className="mb-12 lg:20">
+            <h2 className="text-3xl text-center font-bold w-full text-purple mb-10">
+              Certificates
+            </h2>
             {certificates.map((certificate) => {
-              return <div key={certificate.id}>{certificate.title}</div>;
+              return (
+                <Certificate certificate={certificate} key={certificate.id} />
+              );
             })}
           </div>
         </div>
