@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
-
-import Lottie from "react-lottie";
+import { useRouter } from "next/navigation";
 
 import { cn } from "@/lib/utils";
 
@@ -50,6 +49,7 @@ export const BentoGridItem = ({
   spareImg?: string;
   index: number;
 }) => {
+  const router = useRouter();
   const leftLists = ["Vue", "AWS", "Typescript"];
   const rightLists = ["React", "Next", "GraphQL"];
 
@@ -74,13 +74,20 @@ export const BentoGridItem = ({
     <div
       className={cn(
         "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
-        className
+        className,
+        id === "3fef40ef-d02d-4e39-92f8-745159487a9f" &&
+          "cursor-pointer hover:border-purple/50"
       )}
       style={{
         background: "rgb(4,7,29)",
         backgroundColor:
           "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
       }}
+      onClick={
+        id === "3fef40ef-d02d-4e39-92f8-745159487a9f"
+          ? () => router.push("/about")
+          : undefined
+      }
     >
       <div className={`${index === 6 && "flex justify-center"} h-full`}>
         <div className="w-full h-full absolute">
@@ -166,7 +173,6 @@ export const BentoGridItem = ({
                 }`}
               >
                 <img src="/confetti.gif" alt="confetti" />
-                {/* <Lottie options={defaultOptions} height={200} width={400} /> */}
               </div>
 
               <MagicButton
