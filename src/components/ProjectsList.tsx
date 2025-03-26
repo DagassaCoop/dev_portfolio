@@ -21,7 +21,7 @@ const ProjectsList: FC<IProjectsListProps> = ({ projects }) => {
         >
           <PinContainer title={item.link.split("//")[1]} href={item.link}>
             <a
-              className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[30vh] mb-10"
+              className="relative flex items-center justify-center sm:w-96 w-[80vw] overflow-hidden h-[20vh] mb-10"
               href={item.link}
               target="_blank"
             >
